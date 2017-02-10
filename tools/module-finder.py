@@ -98,8 +98,8 @@ class ModuleFinder:
 def main(config_file, seed_dir, extension):
     cfg = DistillerConfig(config_file, 'client')
 
-    evaluator = ModuleFinder(cfg)
-    evaluator.go(seed_dir, extension)
+    module_finder = ModuleFinder(cfg)
+    module_finder.go(seed_dir, extension)
 
 
 def usage():
